@@ -47,7 +47,7 @@ This will:
 ### Manual
 
 1. Click **Use this template** at the top of this repo to create your own copy (or fork it).
-2. Create a new **Private Service** on Render using the **Existing Image** runtime, pointing at `docker.io/paradedb/paradedb:0.23.1` (or your preferred [tag](https://hub.docker.com/r/paradedb/paradedb/tags)).
+2. Create a new **Private Service** on Render using the **Existing Image** runtime, pointing at `docker.io/paradedb/paradedb:latest` (or your preferred [tag](https://hub.docker.com/r/paradedb/paradedb/tags)).
 3. Add a **Disk** mounted at `/var/lib/postgresql` with at least 10 GB.
 4. Set the following environment variables:
    - `POSTGRES_USER` — database user (e.g. `postgres`)
