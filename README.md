@@ -46,9 +46,9 @@ This will:
 
 ### Manual
 
-1. Fork this repo.
+1. Click **Use this template** at the top of this repo to create your own copy (or fork it).
 2. Create a new **Private Service** on Render.
-3. Connect your forked repo and use the `Dockerfile` runtime.
+3. Connect your new repo and use the `Dockerfile` runtime.
 4. Add a **Disk** mounted at `/var/lib/postgresql` with at least 10 GB.
 5. Set the following environment variables:
    - `POSTGRES_USER` — database user (e.g. `postgres`)
