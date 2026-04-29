@@ -1,7 +1,9 @@
 services:
   - type: pserv
     name: paradedb
-    env: docker
+    runtime: image
+    image:
+      url: docker.io/paradedb/paradedb:0.23.1
     plan: standard
     autoDeploy: true
     disk:

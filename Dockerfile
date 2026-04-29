@@ -1,1 +1,0 @@
-FROM paradedb/paradedb:latest

@@ -36,7 +36,7 @@ This repository deploys [ParadeDB](https://paradedb.com) on [Render](https://ren
 
 Use the button below to deploy ParadeDB on Render.
 
-[![Deploy to Render](http://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/paradedb/render-blueprint)
 
 This will:
 
@@ -47,13 +47,12 @@ This will:
 ### Manual
 
 1. Click **Use this template** at the top of this repo to create your own copy (or fork it).
-2. Create a new **Private Service** on Render.
-3. Connect your new repo and use the `Dockerfile` runtime.
-4. Add a **Disk** mounted at `/var/lib/postgresql` with at least 10 GB.
-5. Set the following environment variables:
+2. Create a new **Private Service** on Render using the **Existing Image** runtime, pointing at `docker.io/paradedb/paradedb:0.23.1` (or your preferred [tag](https://hub.docker.com/r/paradedb/paradedb/tags)).
+3. Add a **Disk** mounted at `/var/lib/postgresql` with at least 10 GB.
+4. Set the following environment variables:
    - `POSTGRES_USER` — database user (e.g. `postgres`)
-   - `POSTGRES_PASSWORD` — a strong password
    - `POSTGRES_DB` — database name (e.g. `paradedb`)
+   - `POSTGRES_PASSWORD` — let Render generate a value, or set your own strong password.
 
 ## Connecting
 
