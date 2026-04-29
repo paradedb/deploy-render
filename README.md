@@ -56,17 +56,24 @@ This will:
 
 ## Connecting
 
-Once deployed, connect from any other service in your Render private network:
+### From another Render service
+
+Once deployed, connect from any other service in your Render private network using the service name as the host:
 
 ```bash
 psql -h paradedb -U postgres -d paradedb
 ```
 
-To connect from your local machine, add an [SSH key to Render](https://render.com/docs/ssh), connect to the SSH endpoint, then run:
+### From your local machine
+
+Private services aren't exposed to the public internet, so the recommended path is to [SSH into the service](https://render.com/docs/ssh) and run `psql` from inside the container:
 
 ```bash
-psql -U postgres paradedb
+ssh srv-XXXXXXXXXXXXX@ssh.<region>.render.com
+psql -U postgres -d paradedb
 ```
+
+Replace `srv-XXXXXXXXXXXXX` with your service ID from the Render dashboard. Make sure you've added an SSH key to your Render account first.
 
 ## Configuration
 
