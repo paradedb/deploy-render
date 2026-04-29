@@ -5,6 +5,7 @@ services:
     image:
       url: docker.io/paradedb/paradedb:latest
     plan: standard
+    region: oregon
     autoDeploy: true
     disk:
       name: data
