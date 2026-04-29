@@ -50,8 +50,8 @@ This will:
 2. Create a new **Private Service** on Render using the **Existing Image** runtime, pointing at `docker.io/paradedb/paradedb:latest` (or your preferred [tag](https://hub.docker.com/r/paradedb/paradedb/tags)).
 3. Add a **Disk** mounted at `/var/lib/postgresql` with at least 10 GB.
 4. Set the following environment variables:
-   - `POSTGRES_USER` — database user (e.g. `postgres`)
    - `POSTGRES_DB` — database name (e.g. `paradedb`)
+   - `POSTGRES_USER` — database user (e.g. `postgres`)
    - `POSTGRES_PASSWORD` — let Render generate a value, or set your own strong password.
 
 ## Connecting
