@@ -18,7 +18,7 @@
 ---
 
 > [!NOTE]
-> This blueprint is maintained by the ParadeDB team. For the official ParadeDB Render Blueprint maintained by the Render team, please refer to the [Render documentation](https://render.com/docs/deploy-paradedb) and the associated [GitHub repository](https://github.com/render-examples/paradedb).
+> This blueprint is maintained by the ParadeDB team. For the official version maintained by Render, see the [Render documentation](https://render.com/docs/deploy-paradedb) and [GitHub repository](https://github.com/render-examples/paradedb).
 
 This repository deploys [ParadeDB](https://paradedb.com) on [Render](https://render.com) with one click using a [Render Blueprint](https://render.com/docs/blueprint-spec).
 
